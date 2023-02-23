@@ -24,12 +24,10 @@ html{
 body{
     background: #F0EEED;
     padding-left: 30rem;
+    font-size: 65%;
 }
 
-section{
-    padding:1rem 5%;
-    min-height: 100vh;
-}
+
 
 .heading{
     font-size: 4rem;
@@ -38,10 +36,7 @@ section{
     text-transform: uppercase;
 }
 
-.heading span{
-    color:var(--main-color);
-    text-transform: uppercase;
-}
+
 
 .btn{
     display: inline-block;
@@ -58,16 +53,6 @@ section{
     letter-spacing: .2rem;
 }
 
-header .smallName{
-  color:#fff;
-  font-size: 3rem;
-  font-weight: bolder;
-}
-
-
-header .smallName span{
-  color:var(--main-color);
-}
 
 header{
     position: fixed;
@@ -78,7 +63,7 @@ header{
     justify-content: space-between;
     z-index: 1000;
     flex-flow: column;
-    padding:8rem 2rem;
+    padding:10rem 2rem;
     width:30rem;
     text-align: center;
 }
@@ -127,6 +112,8 @@ header .socialMedia a:hover{
     align-items: center;
     flex-wrap: wrap;
     gap:1.5rem;
+    padding:1rem 5%;
+    min-height: 100vh;
 }
 
 
@@ -163,18 +150,6 @@ header .socialMedia a:hover{
 }
 
 
-
-.home .content h3{
-    font-size: 4.5rem;
-    color:var(--accent-color);
-    text-transform: uppercase;
-}
-
-.home .content h3 span{
-    color:var(--main-color);
-    text-transform: uppercase;
-}
-
 .home .content .info{
     font-size: 2.5rem;
     color:var(--accent-color);
@@ -187,12 +162,20 @@ header .socialMedia a:hover{
     padding:.5rem 0;
 }
 
+.about, .experience, .contact{
+    padding:1rem 5%;
+    min-height: 100vh;
+}
+
 .about .personal{
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
     padding-bottom: 2rem;
 }
+
+
+
 
 .about .personal .image{
     flex:1 1 25rem;
@@ -211,10 +194,6 @@ header .socialMedia a:hover{
     flex:1 1 50rem;
 }
 
-.about .personal .content h3{
-    color:var(--accent-color);
-    font-size: 3.5rem;
-}
 
 .about .personal .content p{
     color:#666;
@@ -228,6 +207,7 @@ header .socialMedia a:hover{
     gap:1.5rem;
     padding: 0.5rem 0;
 }
+
 
 
 .experience .jobs .box{
@@ -247,24 +227,22 @@ header .socialMedia a:hover{
   
 }
 
-.experience .jobs .box .content span{
-    color:#fff;
-    font-size: 1.7rem;
-    background:var(--accent-color);
-   
-    padding:.4rem 1rem;
-}
 
-.experience .jobs .box .content h3{
-    font-size: 2.5rem;
-    padding:.5rem 0;
-    color:var(--accent-color);;
-}
 
 .experience .jobs .box .content p{
     font-size: 1.5rem;
     color:#666;
 }
+
+.experience .jobs .box .content h2{
+    font-size: 1.5rem;
+   
+}
+
+.experience .jobs .box .content h3{
+    font-size: 1.5rem;
+}
+
 
 
 
@@ -274,19 +252,17 @@ header .socialMedia a:hover{
     gap:1.5rem;
 }
 
-.contact .form1 form{
-    flex:1 1 55rem;
-    background:#fff;
-    padding:0 2rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    border-radius: .5rem;
+.contact h2{
+    color:#333;
+    font-size: 1.7rem;
 }
+
+
 
 
 .contact .form1 form .box,
 .contact .form1 form textarea{
     width: 100%;
-    border-bottom: .1rem solid #333;
     color:#333;
     text-transform: none;
     font-size: 1.7rem;
@@ -301,15 +277,8 @@ header .socialMedia a:hover{
     resize: none;
 }
 
-.contact .form1 form .btn{
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-}
 
 
-
-
-/* media queries  */
 @media (max-width:991px){
 
     html{
@@ -320,21 +289,8 @@ header .socialMedia a:hover{
         padding: 0;
     }
 
-    #menu-bars{
-        display: initial;
-    }
-
     header{
         left:-120%;
-    }
-
-    header.active{
-        left:0%;
-    }
-
-    .cursor-1,
-    .cursor-2{
-        display: none;
     }
 
 }
